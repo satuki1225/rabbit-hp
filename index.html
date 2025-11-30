@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>白うさ王国公式サイト - White Rabbit Kingdom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=MS+Gothic&display=swap');
+      
+      body {
+        font-family: 'MS PGothic', 'Osaka', 'Arial', sans-serif;
+      }
+
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #dfdfdf; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #404040;
+        border-bottom: 2px solid #404040;
+      }
+      ::-webkit-scrollbar-button {
+        background: #c0c0c0;
+        width: 16px;
+        height: 16px;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #404040;
+        border-bottom: 2px solid #404040;
+      }
+
+      .font-pixel {
+        font-family: 'DotGothic16', sans-serif;
+      }
+      
+      .retro-border-outset {
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+        border-right: 2px solid #808080;
+        border-bottom: 2px solid #808080;
+        background-color: #c0c0c0;
+      }
+      
+      .retro-border-inset {
+        border-top: 2px solid #808080;
+        border-left: 2px solid #808080;
+        border-right: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        background-color: #ffffff;
+      }
+
+      .retro-text-shadow {
+        text-shadow: 1px 1px 0px #ffffff;
+      }
+
+      /* Marquee Animation */
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      .animate-marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+      }
+      
+      /* Blink Animation */
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .animate-blink {
+        animation: blink 1s step-end infinite;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-200 overflow-hidden h-screen w-screen">
+    <div id="root" class="h-full w-full overflow-auto"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
